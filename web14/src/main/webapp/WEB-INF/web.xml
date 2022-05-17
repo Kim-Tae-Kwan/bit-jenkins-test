@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  	<welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>EmpOne</servlet-name>
+  	<servlet-class>com.bit.controller.EmpOneController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmpOne</servlet-name>
+  	<url-pattern>/api/emp.json</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EmpList</servlet-name>
+  	<servlet-class>com.bit.controller.EmpListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmpList</servlet-name>
+  	<url-pattern>/api/emps.json</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EmpAdd</servlet-name>
+  	<servlet-class>com.bit.controller.EmpInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmpAdd</servlet-name>
+  	<url-pattern>/api/addemp.json</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EmpUpdate</servlet-name>
+  	<servlet-class>com.bit.controller.EmpUpdateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmpUpdate</servlet-name>
+  	<url-pattern>/api/empUpdate.json</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EmpDelete</servlet-name>
+  	<servlet-class>com.bit.controller.EmpDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmpDelete</servlet-name>
+  	<url-pattern>/api/empDelete.json</url-pattern>
+  </servlet-mapping>
+</web-app>
